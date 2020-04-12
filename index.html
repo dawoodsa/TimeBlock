@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <title>Time Block</title>
+</head>
+
+<body>
+   
+    <heading>
+        <div class="section-init">
+            <h1 class="heading-primary month">
+                sunday
+            </h1>
+            <h2 class="heading-secondary">
+                tasks total duration:
+            </h2>
+            <h2 class="heading-secondary total-duration">
+                0min
+            </h2>
+        </div>
+    </heading>
+    <main>
+       <div class="section-grid">
+           <div class="add-box">
+            <label for="add-button" class="add-box__label">Add Block</label>
+            <a href="#add" class="add-box__button icon-plus" name="add-button"></a>
+        </div>
+      
+         <div class="row">
+             
+    
+        </div>
+       
+   </div>
+          
+             
+                <div class="section-add-form" >
+                
+                <div class="add-form" id="add">
+                      
+                       <form action="/addItem" method="post" class="form1" >
+                       <a  href="#" class="form1__close-icon icon-plus"></a>
+                       <label class="form1__labels">title</label>
+                        <input type="text" class="form1__input--title" placeholder="task title" >
+                        
+                         <label class="form1__labels">from</label>
+                        <input type="time" class="form1__input-time--from">
+                        
+                         <label class="form1__labels">to</label>
+                        <input type="time" class="form1__input-time--to" >
+                        
+                         <label class="form1__labels">choose color</label>
+                        <input type="color" class="form1__input--color" value="#ffffff" >
+                        <button class="submit" id="submit">Add</button>
+                    </form>
+
+                    </div>
+                        
+                </div>            
+    </main>          
+</body>
+               
+</html>
+<script src="index.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- <div class="section-sign-in-form" id="sign-in">
+                <form action="#" class="form2">
+                   
+                    <a  href="#" class="form2__close-icon icon-plus"></a>
+                    
+                    <label class="form1__labels">email</label>
+                    <input type="email" class="form2__input--email" placeholder="email"  name="email-in"required>
+                    
+                    <label class="form1__labels">password</label>
+                    <input type="password" class="form2__input--password" placeholder="password" name="password-in" required>
+                    
+                    <button class="submit login">login</button>
+                    <a href="#sign-up" class="sign-up-link">dont have account</a>
+                    
+                </form>
+                
+                <div class="section-sign-in-form" id="sign-up">
+                <form action="#" class="form2">
+                    <a  href="#" class="form2__close-icon icon-plus"></a>
+                    
+                    <label class="form1__labels">email</label>
+                    <input type="email" class="form2__input--email" placeholder="email" name="email-up" required>
+                    
+                    <label class="form1__labels">password</label>
+                    <input type="password" class="form2__input--password" placeholder="password" name="password-up" required>
+                    
+                    <button class="submit login">sign up</button>
+                </form>
+        </div>
+        </div>
+             <nav class="section-nav">
+       <div class="navbar">
+            <h3 class="heading-tertiary">sign in to save your blocks</h3>
+            <a href="#sign-in" class="navbar__button">sign in</a>
+       </div>
+    </nav>
+          -->
