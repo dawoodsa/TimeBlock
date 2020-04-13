@@ -11,13 +11,10 @@
 html {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif; }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -29,6 +26,9 @@ body {
   padding: 3rem 3rem;
   font-weight: 400;
   line-height: 1.7; }
+  @media (max-width: 31em) {
+    body {
+      padding: 0; } }
 
 :target body {
   background-color: rgba(0, 0, 0, 0.8); }
@@ -41,6 +41,9 @@ body {
   letter-spacing: 2rem; }
   .heading-primary:hover {
     color: #000; }
+  @media (max-width: 31em) {
+    .heading-primary {
+      font-size: 6.5rem; } }
 
 .heading-secondary {
   text-transform: uppercase;
@@ -50,6 +53,9 @@ body {
   letter-spacing: .1rem; }
   .heading-secondary:hover {
     color: #000; }
+  @media (max-width: 31em) {
+    .heading-secondary {
+      font-size: 3rem; } }
 
 .heading-tertiary {
   text-transform: uppercase;
@@ -70,6 +76,9 @@ body {
     border-radius: 1rem;
     padding: 1rem;
     transition: all .2s ease; }
+    @media (max-width: 31em) {
+      .add-box__button:link, .add-box__button:visited {
+        font-size: 3.5rem; } }
   .add-box__button:active {
     transform: translateY(-2px); }
   .add-box__button:hover {
@@ -191,6 +200,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 31em) {
+    .col {
+      font-size: 3rem; } }
   .col__name {
     text-align: center;
     font-weight: 600; }
@@ -227,6 +239,18 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: all .2s; }
+    @media (max-width: 31em) {
+      .col__delete {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-30px) rotate(-45deg); }
+        .col__delete:active {
+          background: linear-gradient(to right bottom, #7ed56f, #28b485);
+          color: transparent;
+          -webkit-background-clip: text; } }
     .col__delete:hover {
       background: linear-gradient(to right bottom, #7ed56f, #28b485);
       color: transparent;
@@ -325,6 +349,9 @@ body {
   border-bottom-right-radius: 1rem;
   text-align: center;
   color: #fff; }
+  @media (max-width: 31em) {
+    .section-init {
+      border-radius: 1rem; } }
 
 .section-nav {
   padding: 2rem 0;
